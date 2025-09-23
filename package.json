@@ -4,13 +4,14 @@
   "description": "使用 Playwright 爬取微信文章的爬蟲工具",
   "main": "src/crawler.js",
   "scripts": {
-    "start": "node start.js",
+    "start": "node server.js",
     "server": "node server.js",
     "dev": "nodemon server.js",
     "example": "node src/example.js",
     "test": "node src/test.js",
     "test-api": "node test-api.js",
-    "install-browsers": "npx playwright install"
+    "install-browsers": "npx playwright install",
+    "postinstall": "npx playwright install --with-deps"
   },
   "keywords": ["wechat", "crawler", "playwright", "scraping"],
   "author": "Your Name",
